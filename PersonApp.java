@@ -14,7 +14,13 @@ public class PersonApp {
 		System.out.println(John.greeting());
 		System.out.println(Sarah.greeting());
 
-		Smith.conversation(Smith);
+		PersonList people = new PersonList();
+
+		people.addPerson(Smith);
+		people.addPerson(John);
+		people.addPerson(Sarah);
+
+		System.out.println(people.findPersonByName("Sam"));
 
 	}
 
